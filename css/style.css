@@ -62,11 +62,17 @@ body {
     background-image: -moz-linear-gradient(left, green, purple);
     background-image: linear-gradient(to left, green, purple);
 }
+
+@media (min-width: 600px) {
+    img {
+      max-width: 400px;
+    }
+  }
   
 img {
     border: 6px solid white;
     border-radius: 6px;
-    max-width: 400px;
+    max-width: 80%;
     height: auto;  
     display: block;
     margin-left: auto;
