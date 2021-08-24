@@ -40,6 +40,7 @@ $(document).keypress(function (e) {
             var fn = prompt("Password", "");
             if (fn === "420") {
                 suprise();
+                c = 0;
             }
         }
     };
