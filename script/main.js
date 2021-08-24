@@ -37,19 +37,23 @@ $(document).keypress(function (e) {
         bpi = (bpi + 1) % bp.length;
         img.src = bp[bpi];
         t.textContent = bpt[bpi];
+    };
+    getLikes();
+    document.getElementById("likebtn").onclick = function () {
+        addLike();
+    }
+
+    var cs = document.getElementById("csongi");
+    cs.onclick = function () {
         c++;
         if (c === 4) {
-            var fn = prompt("Password", "");
+            var fn = prompt("Activate székenforgás", "");
             if (fn === "420") {
                 suprise();
                 c = 0;
             }
         }
     };
-    getLikes();
-    document.getElementById("likebtn").onclick = function () {
-        addLike();
-    }
 })();
 
 function addLike() {
