@@ -1,3 +1,5 @@
+// code written while fckin high, QA 100%
+
 var bpi = 0;
 var bpt = ["Blekk - The Groom", "...and..."];
 var bp = ["images/blekk1.jpg", "images/mel.png"];
