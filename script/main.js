@@ -37,7 +37,7 @@ $(document).keypress(function (e) {
         t.textContent = bpt[bpi];
         c++;
         if (c === 4) {
-            var fn = prompt("Please enter your favorite number", "???");
+            var fn = prompt("Password", "");
             if (fn === "420") {
                 suprise();
             }
