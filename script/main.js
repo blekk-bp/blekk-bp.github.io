@@ -1,6 +1,7 @@
 var bpi = 0;
 var bpt = ["Blekk - The Groom", "...and..."];
 var bp = ["images/blekk1.jpg", "images/mel.png"];
+var c = 0;
 
 var pressedKeys = [];
 var resetT = null;
@@ -34,6 +35,13 @@ $(document).keypress(function (e) {
         bpi = (bpi + 1) % bp.length;
         img.src = bp[bpi];
         t.textContent = bpt[bpi];
+        c++;
+        if (c === 4) {
+            var fn = prompt("Please enter your favorite number", "???");
+            if (fn === "420") {
+                suprise();
+            }
+        }
     };
     getLikes();
     document.getElementById("likebtn").onclick = function () {
